@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cali Cowboy</title>
+    <meta name="description" content="Sales Registry">
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+
+
+<body>
+    <header class="main-header">
+        <a href="index.html"><h1 class="title">Display Sales</h1></a>
+    </header>
+        <!-- This page was created to show display the sales taht are made
+        The data is stored in an array of objects and the user can add or remove registries.
+    For personal reasons, I decided to not link the css file and include the script on this same html document.
+It can be found in the bottom. In it, an array of objects is declared and the scripts in charge of displaying and modifying the 
+data are there too. In order to validate the data that is inputted by the user, <select> labels were used to filter the data that can be inserted.-->
+
+    <div id="output" class="card4"></div>
+    <div class="card4">
+        Product :<select type="text" name="model" id="product">
+            <option value="Boots">Leather</option>
+            <option value="Sunglasses">Western</option>
+            <option value="Sombreros">Cruiser</option>
+            </select>
+        Model :<select type="text" name="model" id="model">
+            <option value="Leather">Leather</option>
+            <option value="Western">Western</option>
+            <option value="Cruiser">Cruiser</option>
+            <option value="Modern">Leather</option>
+            <option value="Retro">Western</option>
+            <option value="Vintage">Cruiser</option>
+            <option value="Classic">Leather</option>
+            <option value="Square">Western</option>
+            <option value="Navigator">Cruiser</option>
+            </select>
+        Color :<select type="text" name="color" id="color">
+            <option value="White">White</option>
+            <option value="Brown">Brown</option>
+            <option value="Black">Black</option>
+            </select>
+        Quantity :<select type="text" name="quantity" id="quantity">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            </select>
+    </div>
+<div class="card4">
+    <button onclick="addObject()">Add Sale</button>
+    <button onclick="deleteObject()">Delete Sale</button>
+</div>
+    
+</body>
+
+<script>
+    const arrayOfObjects = [{product:"Sunglasses", model:"Navigator", color:"White", quantity:"2"},
+                        {product:"Sombreros", model:"Vintage", color:"Black", quantity:"3"},
+                        {product:"Boots", model:"Leather", color:"Brown", quantity:"1"}
+];
+function displayObjects() {
+  let outputDiv = document.getElementById("output");
+    outputDiv.innerHTML = "";
+  
+  arrayOfObjects.forEach(function(item) {
+    let paragraph = document.createElement("p");
+    
+    paragraph.textContent = "Product: " + item.product + ", Model: " + item.model  + ", Color: " + item.color  + ", Quantity sold: " + item.quantity;
+    
+    outputDiv.appendChild(paragraph);
+  });
+}
+
+// Call the function to display the objects
+displayObjects();
+
+function addObject() {
+  // An object is created in which its properties are product, model, color and quantity
+  // The data that is going to be obtained in these parameters will be taken from HTML elements.
+  // To be specific on which values are gping to be pulled, we specify the ID of the element
+  // from wich the value that is stored in the element will be saved in the object's property.
+  let newObj = {
+    product:document.getElementById("product").value,
+    model:document.getElementById("model").value,
+    color:document.getElementById("color").value,
+    quantity:document.getElementById("quantity").value  };
+  
+  // Once we fill the new object with the data, .push will add it to the array
+  arrayOfObjects.push(newObj);  
+  displayObjects();
+}
+displayObjects();
+// This function is created to delete the last object of the array.
+//This is done thanks to .pop
+function deleteObject(){
+    arrayOfObjects.pop();
+    displayObjects();
+}
+displayObjects();
+    </script>
+
+</html>

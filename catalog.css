@@ -1,0 +1,128 @@
+
+.main-header {
+    background-color: rgb(149, 94, 66);
+    padding-bottom: 5px;
+    padding-top: 10px;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('cowboy_wallpaper.jpg');
+    background-size: auto;
+    background-position: center;
+    height: 100vh;
+}
+.title {
+    text-align: center;
+    margin: 0;
+    font-size: 5em;
+    font-family: "Helvetica";
+    font-weight: normal;
+    color: black;
+    
+}
+.wrapper-gallery{
+    margin: 0 20vw;
+}
+#index-gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    grid-template-areas: 
+
+    "img1 img2 img3"
+    "img4 img5 img6"
+    "img7 img8 img9"
+    "img10 img10 img10"
+    "img13 img14 img15"
+    "img16 img16 img16";
+}
+#index-gallery .gallery-img{
+   width: 300px;
+   height: 300px;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   cursor: pointer;
+}
+
+#index-gallery .img1{
+  grid-area: img1;
+  background-image: url("https://m.media-amazon.com/images/I/71Up+vzxutL._AC_UY1000_.jpg");
+}
+#index-gallery .img2{
+    grid-area: img2;
+    background-image: url("https://www.jacksonswesternstore.com/media/catalog/product/cache/01fa5dcb9ab8062e1550cb78df34db12/r/f/rftant-7542b2.jpg");
+  }
+  #index-gallery .img3{
+    grid-area: img3;
+    background-image: url("https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/92ae389ef952baad3a235710803ec1de.jpg?imageMogr2/auto-orient%7CimageView2/2/w/800/q/70/format/webp");
+  }
+  #index-gallery .img4{
+    grid-area: img4;
+    background-image: url("https://tienda-vaquera.com.mx/cdn/shop/files/Nouveauprojet-2023-05-16T140038.169_1_1024x1024.webp?v=1684260079");
+  }
+  #index-gallery .img5{
+    grid-area: img5;
+    background-image: url("https://tienda-vaquera.com.mx/cdn/shop/files/edd3ef4e-5aba-42ac-b89c-d5af4409f113_1_600x.webp?v=1684333969");
+  }
+  #index-gallery .img6{
+    grid-area: img6;
+    background-image: url("https://tienda-vaquera.com.mx/cdn/shop/files/Nouveauprojet-2023-05-16T140703.691_1_1024x1024.webp?v=1684260479");
+  }
+  #index-gallery .img7{
+    grid-area: img7;
+    background-image: url("https://img.kwcdn.com/product/fancy/457d23f4-bdda-477a-a04f-4fae8f45d021.jpg?imageMogr2/auto-orient%7CimageView2/2/w/800/q/70/format/webp");
+  }
+  #index-gallery .img8{
+    grid-area: img8;
+    background-image: url("https://m.media-amazon.com/images/I/51hetC0qc4L._AC_UF894,1000_QL80_.jpg");
+  }
+  #index-gallery .img9{
+    grid-area: img9;
+    background-image: url("https://m.media-amazon.com/images/I/51PkxwTpm+L._AC_UY1000_.jpg");
+  }
+
+  #index-gallery .img10{
+    grid-area: img10;
+    background-image: url("https://static.vecteezy.com/system/resources/previews/031/151/988/non_2x/of-black-african-man-with-white-turtle-neck-black-sunglasses-black-leather-jacket-and-white-cowboy-hat-generative-ai-photo.jpg");
+    width: 1250px;
+  }
+    #index-gallery .img13{
+      grid-area: img13;
+      background-image: url("https://cdn.sanity.io/images/v8kybopt/production/f2f9ae447970c86152a36b0d21aed3fbef01d8ab-2000x2000.png?w=1000&fit=max&auto=format");
+    }
+    #index-gallery .img14{
+      grid-area: img14;
+      background-image: url("https://www.larazawestern.com/wp-content/uploads/RB-35-scaled-e1692484201322.jpg");
+    }
+    #index-gallery .img15{
+      grid-area: img15;
+      background-image: url("https://shop.whitesboots.com/images/products/secondary/350-cruiser-4.png");
+    }
+    #index-gallery .img16{
+        grid-area: img16;
+        background-image: url("https://revo.com/cdn/shop/products/Desert_RE1165_02_BL.jpg?v=1676042744&width=1080");
+        width: 1250px;
+      }
+  .gallery-img div{
+      width: 100%;
+      height: 100%;
+      background-color: black;
+      opacity: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .gallery-img a{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.gallery-img div:hover{
+    opacity: 0.8;
+    transition: all ease-in-out 100ms;
+}

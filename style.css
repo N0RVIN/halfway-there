@@ -2,37 +2,89 @@ html,
 body {
     margin: 0;
     padding: 0;
+    background-image: url('cowboy_wallpaper.jpg');
+    background-size: auto; /* Adjust the background size as needed */
+    background-position: center; /* Center the background image */
+    height: 100vh; /* Make the background cover the entire viewport height */
 }
 
 .main-header {
-    background-color: rgba(0, 0, 0, .3);
-    padding-bottom: 10px;
+    background-color: rgb(149, 94, 66);
+    padding-bottom: 5px;
+    padding-top: 10px;
 }
 
 .title {
     text-align: center;
     margin: 0;
-    font-size: 8em;
+    font-size: 5em;
     font-family: "Helvetica";
     font-weight: normal;
-    color: white;
+    color: black;
 }
 
 #card-container {
+    display:flex;
+    justify-content: center;
+    margin: 20px;
+    background-color: rgb(214, 80, 13);
+    border-radius: 10%;
+    border-bottom-right-radius: 0%;
+}
+#card-container2 {
     display: flex;
     justify-content: center;
     margin: 20px;
+    background-color: rgb(167, 57, 2);
+    border-radius: 10%;
+    border-bottom-right-radius: 0%;
+
+}
+#card-container3 {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    background-color: rgb(167, 57, 2);
+    border-radius: 10%;
+    border-bottom-right-radius: 0%;
+    height: flex;
 }
 
+
 .card {
-    width: 300px;
+    display:flex;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin: 5px;
+    margin: 40px;
+}
+.card2 {
+    width: flex;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 40px;
+}
+.card3 {
+    width: flex;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 40px;
 }
 
 .card-content {
+    padding: 20px;
+    font-family: "Verdana";
+    color: #777;
+    
+}
+.card-content2 {
+    padding: 20px;
+    font-family: "Verdana";
+    color: #777;
+}
+.card-content3 {
     padding: 20px;
     font-family: "Verdana";
     color: #777;
@@ -41,21 +93,48 @@ body {
 .card-content h2 {
     margin-top: 0;
     font-size: 20px;
+    text-align: center;
+    color: black;
+    
+
+}
+.card-content2 h2 {
+    margin-top: 0;
+    font-size: 20px;
+    text-align: center;
+    color: black;
+}
+.card-content3 h2 {
+    margin-top: 0;
+    font-size: 20px;
+    text-align: center;
+    color: black;
 }
 
 .card img {
-    width: 100%;
-    height: auto;
+    width:100%;
+    height: 20pc;
+}
+.card2 img {
+    width:20pc;
+    height: 15pc;
+}
+.card3 img {
+    width:20pc;
+    height: 15pc;
 }
 
 .footer {
     display: flex;
     justify-content: center;
-    background-color: rgba(0, 0, 0, .3);
+    background-color: rgb(85, 55, 57);
     padding: 10px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
 }
 
-button {
+.button {
     text-align: center;
     background-color: #666;
     border: none;
@@ -67,4 +146,113 @@ button {
     font-size: 22px;
     cursor: pointer;
     margin: 5px;
+    display: flex;
+    justify-content: center;
+
+}
+.banner {
+    background-color:rgb(149, 94, 66); /* Blue color for the banner */
+    color: #fff; /* White text color */
+    padding: 10px 20px; /* Add padding to the banner */
+    border-radius: 5px; /* Add rounded corners */
+    width: 100%; /* Adjust width as needed */
+    text-align: center; /* Center-align text */
+  }
+  
+  .label {
+    font-size: 20px; /* Adjust font size as needed */
+    font-weight: bold; /* Make the label bold */
+  }
+.inputForm{
+width: flex;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 40px;
+    background-color:rgb(255, 255, 255); /* Blue color for the banner */
+    padding-left: 5%;
+
+}
+.banner2 {
+    background-color:rgb(255, 251, 0); /* Blue color for the banner */
+    color: rgb(0, 0, 0); /* White text color */
+    padding: 10px 20px; /* Add padding to the banner */
+    border-radius: 5px; /* Add rounded corners */
+    width: 100%; /* Adjust width as needed */
+    text-align: center; /* Center-align text */
+  }
+  .sombrContainer{
+      overflow:hidden;
+      font-size: 30px;
+      margin-top: 20px;
+      display: block;
+      border: 2px;
+      border-color: rgb(0, 0, 0);
+}
+  .tab{
+      float:left;
+      display: block;
+      text-align: center;
+      justify-content: center;
+      border: 2px;
+      border-color: rgb(0, 0, 0);
+      margin: 0px;
+}
+  .tab-2{
+      background-color:rgb(255, 255, 255);
+      justify-content: center;
+      padding-left: 20px;padding-right: 20px;
+      position:fixed;
+      bottom: 0;
+      font-size: 20px;
+      width: 100%;
+      padding: 10px;
+      
+
+}
+  .tab-2 input{
+      margin: 20px;
+      justify-content: center;
+}
+tr:nth-child(even) {
+    background-color: #D6EEEE;
+  }
+tr:nth-child(odd) {
+    background-color: #ffffff;
+  }
+  .wrapper-gallery{
+      margin: 0 20vw;
+  }
+  #index-gallery{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: auto;
+      grid-gap: 10px;
+  }
+  #index-gallery .gallery-img{
+     width: 100%;
+     height: 300px;
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+     cursor: pointer;
+}
+#index-gallery .img1{
+    grid-area: img1;
+    background-image: url("/cowboy_wallpaper.jpg");
+}
+img:hover{
+    opacity: 0.7;
+    transition: all ease-in-out 100ms;
+}
+.displaySales{
+    margin: 20px;
+}
+.card4 {
+    width: flex;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 40px;
+    background-color: white;
 }

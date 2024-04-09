@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cali Cowboy | Home</title>
+    <meta name="description" content="A Catalog of Shows Set in Los Angeles">
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="scripts.js"></script>
+
+    <style>
+    
+    </style>
+</head>
+
+<body>
+    <header class="main-header">
+        <a href="index.html"><h1 class="title">Sunglasses Sale</h1></a>
+    </header>
+    <!-- Three tables are used, one will display the name of the columns -->
+    <!-- The second will display the data, this is pulled from a script from Javascript and will only affect the second table
+    because it is defined to only affect those elements with the id = "table1" -->
+<!-- The third will return the total sum of the totals displayed in the last table. Some conditions are set and simple arithmetic
+operations are made -->
+    <div class="sombrContainer">
+        <div class="tab tab-1"> 
+            <table id="table" border="3">
+                <tr>
+                    <th>Model</th>
+                    <th>Color</th>
+                    <th>Quantity</th>
+                    <th>Cost</th>
+                </tr>
+
+            </table>
+            <table id="table1" border="3">
+               
+            </table>
+            <table id="table2" >
+                <tr>
+                    <th>Total $</th>
+                    <th id="totalSunglasses">0.00</th>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+        <!-- This will display elements in which the user can interact with the values of the table -->
+
+        <div class="tab tab-2">
+            Model :<select type="text" name="model" id="model">
+                <option value="Classic">Classic</option>
+                <option value="Square">Square</option>
+                <option value="Navigator">Navigator</option>
+                </select>
+            Color :<select type="text" name="color" id="color">
+                <option value="White">White</option>
+                <option value="Brown">Brown</option>
+                <option value="Black">Black</option>
+                </select>
+            Quantity :<select type="text" name="quantity" id="quantity">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                </select>
+
+<!-- These buttons will be in charge of running the functions that will modify the data from the table-->
+
+            <button onclick="AddRowSunglasses();">Add</button>
+            <button onclick="removeRowSunglasses();">Remove</button>
+            <button onclick="submitRow();">Submit</button>
+            </div>
+        </div>
+
+</body>

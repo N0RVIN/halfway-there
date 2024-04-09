@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>LA TV Shows | Home</title>
+    <title>Cali Cowboy | Home</title>
     <meta name="description" content="A Catalog of Shows Set in Los Angeles">
     <link rel="stylesheet" href="style.css" />
     <script type="text/javascript" src="scripts.js"></script>
@@ -10,7 +10,7 @@
 
 <body>
     <header class="main-header">
-        <h1 class="title">LA TV Shows</h1>
+        <a href="index.html"><h1 class="title">Cowboy Accesories</h1></a>
     </header>
     <div id="card-container">
         
@@ -19,19 +19,66 @@
         <div class="card-content">
             <h2>TV Show Title</h2>
             <img src="" alt="TV Show Poster">
-            <ul>
-                <li>Bullet Point 1</li>
-                <li>Bullet Point 2</li>
-                <li>Bullet Point 3</li>
-            </ul>
+            <button class="button id="redirectButton">
+                Order
+            </button>
         </div>
     </div>
-    <div class="footer">
-        <button onclick="quoteAlert();">
-            Get A Quote!
+    <div class="banner">
+        <span class="label">Comming soon!!</span>
+      </div>
+    <div id="card-container2">
+        
+    </div>
+    <div class="card2" style="display: none;">
+        <div class="card-content2">
+            <h2>TV Show Title</h2>
+            <img src="" alt="TV Show Poster">
+            <button class="button id="redirectButton" style="display: none;">
+                See Full Catalog
+            </button>
+        </div>
+    </div>
+    <div class="banner">
+        <span class="label">Recommendations</span>
+      </div>
+    <div class="inputForm">
+        <h2>Insert any product you think should be implemented to the Catalog</h2>
+        <form>
+            <input type="text" id="textbox">
+          </form>
+          <button class="button "onclick="addCard();">
+            Add Recomendation
         </button>
-        <button onclick="removeLastCard();">
-            Remove A Card!
+    </div>
+    <div id="card-container3">
+        
+    </div>
+    <div class="card3" style="display: none;">
+        <div class="card-content3">
+            <h2>TV Show Title</h2>
+            <img src="" alt="TV Show Poster">
+            <button class="button id="redirectButtonG">
+                Refresh Index
+            </button>
+        </div>
+    </div>
+    <div class="banner2">
+        <span class="label">Snap Project</span>
+      </div>
+    
+    <div class="footer">
+        <button class="button "onclick="SubmitRecomendations();">
+            Submit!
+        </button>
+        <button class="button "onclick="removeLastCard();">
+            Remove Recomendation
+        </button>
+        <button class="button id="catalogButton" onclick="goToCatalog();">
+            <a href="catalog.html">Full Catalog</a>
+        </button>
+        <button class="button id="catalogButton" onclick="goToCatalog();">
+            <a href="display.html">View Sales</a>
         </button>
     </div>
 </body>
